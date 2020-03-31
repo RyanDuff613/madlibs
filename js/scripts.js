@@ -9,7 +9,7 @@ $(document).ready(function() {
     }); */
     console.log(blanks.length);
 
-    for(index = 0, index<blanks.length, index+=1){
+    for ( var index = 0; index < blanks.length; index+=1){
       var userInput = $('input#'+blanks[index]).val();
       $("." + blanks[index]).text(userInput);
     }
